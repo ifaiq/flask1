@@ -1,0 +1,16 @@
+{%extends 'layout.html' %}
+{% block body %}
+<h3>Articles</h3>
+<ul class = 'list-group'>
+
+    {% for car in cars %}
+    <a href="{{car.wiki}}" >
+    <li  class="list-group-item" >{{car.model}}</li>
+    </a>
+    <li  class="list-group-item" >{{car.price}}</li>
+    
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
